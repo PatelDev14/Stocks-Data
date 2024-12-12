@@ -107,12 +107,14 @@ const QuoteDisplay = ({ quote }) => {
             </div>
             <p><strong>Price:</strong> ${quote.price.toFixed(2)}</p>
             <p><strong>Market Cap:</strong> ${formatNumber(quote.mktCap)}</p>
-            <p><strong>Changes:</strong> {formatChange(quote.changes)}</p>
+            <p><strong>P/E Ratio:</strong> {quote.lastDiv ? quote.lastDiv.toFixed(2) : 'N/A'}</p>
+            <p><strong>Changes:</strong> ${formatChange(quote.changes)}</p>
             <p><strong>Industry:</strong> {quote.industry}</p>
             <p><strong>Currency:</strong> {quote.currency}</p>
-            <p><strong>Range:</strong> {quote.range}</p>
+            <p><strong>Range:</strong> ${quote.range}</p>
             <p><strong>Sector:</strong> {quote.sector}</p>
             <p><strong>Country:</strong> {quote.country}</p>
+            <p><strong>CEO:</strong> {quote.ceo}</p>
             <p><strong>IPO Date:</strong> {new Date(quote.ipoDate).toLocaleDateString()}</p>
             <p><strong>Full-Time Employees:</strong> {quote.fullTimeEmployees}</p>
             <p><strong>Phone:</strong> {quote.phone}</p>

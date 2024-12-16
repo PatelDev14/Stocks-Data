@@ -162,16 +162,6 @@ button:active {
   }
 }
 
-/* @media (min-width: 600px) {
-  input {
-    width: 250px;
-  }
-
-  button {
-    width: auto;
-  }
-} */
-
 
 @media (max-width: 600px) {
   input {
